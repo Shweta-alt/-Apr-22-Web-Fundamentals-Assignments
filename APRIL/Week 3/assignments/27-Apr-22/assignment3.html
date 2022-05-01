@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portfolio Website</title>
+    <style>
+    body{
+        margin: 0;
+    }
+
+    @media (max-width: 300px) {
+        .container {
+          flex-direction: column;
+        }
+      }
+    
+        #container{
+           
+        }
+        #navbar{
+            width: 100%;
+            height: 100px;
+            background-color: navy;
+            border-bottom:1px solid black;           
+            display: flex;
+                    }
+                    
+                   #nav-items ul{
+                    margin-left: 15vw;
+                   }
+                    #nav-items ul li{
+                        float: left;
+                        padding: 15px;
+                        list-style: none;
+                        text-decoration: none;
+                        color: white;
+                        font-size: 15pt;   
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        line-height: 50px;
+                       
+                    }
+                    #nav-items button{
+                        width: 150px;
+                        height: 50px;
+                        background-color:rgb(10, 247, 255);
+                        text-align: center;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        padding: 5px;
+                        font-size: 15pt;
+                        margin-left: 15vw;
+                        border-radius: 10px;
+                    }
+                    
+                    #home {
+                        width: 100%;
+                        height: 600px;
+                        background-color: navy;
+                        display: flex;
+                        justify-content: space-around;
+                       
+                        color: white;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    }
+
+                    #home img{
+                        width: 400px;                        
+                        height: 450px;
+                        
+                    }
+
+                    #home #man{
+                        width: 30%;
+                        height: 500px;
+                        
+                        margin: 5vh;
+                    }
+
+                    #home h3{
+                        color: cyan;
+                        font-size: 18pt;
+                    
+                    }
+                    #home h1{
+                        font-size: 45pt;
+                    
+                    }
+
+                    #home span{
+                        color: cyan;
+                    }
+
+                    #home button{
+                        width: 150px;
+                        height: 50px;
+                        border-color: cyan;
+                        color: cyan;
+                        background: transparent;
+                        border-radius:5% ;
+                    }
+
+                    #para1{
+                        margin: 5vh;
+                        padding: 5vh;
+                        width: 60%;
+                    }
+
+                    /* about Styling */
+                      
+                    #about {
+                        width: 100%;
+                        height: 500px;
+                        background-color: white;
+                        display: flex;
+                        justify-content: space-around;
+                       
+                        
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    }
+
+                    #about img{
+                        width: 400px;                        
+                        height: 400px;
+                        
+                    }
+
+                    #about #man2{
+                        width: 25%;
+                        height: 400px;
+                        
+                        margin: 5vh;
+                    }
+
+                   
+                   
+
+                    #about span{
+                        color: cyan;
+                    }
+
+                    #para2{
+                        margin: 5vh;
+                        margin-left: 15vh;
+                        padding: 5vh;
+                        width: 30%;
+                        align-items: center;
+                    }
+
+                    #para2 ul li{
+                        float: left;
+                        list-style: none;
+                        padding: 2vh;
+                    }
+
+                    #para2 ul li img{
+
+                        border-radius: 50%;
+                    }
+
+                    #para2 ul li button{
+                        border-radius: 50%;
+                        width: 30px;
+                        height: 30px;
+                        font-size: 2pt;
+                        padding: 5px;
+                        background-color: black;
+                        color: white;
+                    }
+
+                    /* services styling start */
+
+                    #services{
+                        text-align: center;
+                        width: 100%;
+                        height: 1000px;
+                        background-color: rgb(241, 241, 241);
+                        
+                    }
+
+                    #tags_1{
+                        display: flex;
+                       margin: 2vh;
+                        
+                    }
+                    #tags_2{
+                        display: flex;
+                        margin: 2vh;
+                     
+                    }
+
+                    #tag1{
+                        margin: 2vh;
+                    }
+
+                    #heading{
+                        width: 100%;
+                        height: 200px;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;                                              
+                    }
+
+                   
+                    #heading h1{
+                        color: cyan;
+                        
+                    }
+                    #heading span{
+                        color: black;
+                    }
+                    #heading p{
+                        font-size: 15pt;
+                        
+                    }
+
+
+                    #white{
+                        width: 400px;
+                        height: 300px;
+                        background-color: white;
+                        text-align: center;
+                    }
+                    #white h2{
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        margin: 30px;
+                    }
+                    #cyan{
+                        width: 100px;
+                        height: 100px;
+                        background-color: cyan;
+                        
+                    }
+                    #black{
+                        margin: 20px;
+                        width: 30px;
+                        height: 30px;
+                        border: 5px solid black;
+                        background: transparent;
+                    }
+
+                    /* Styling of  WORKS  */
+                    #works{
+                        height: 300px;
+                        width: 100%;
+                        background-image: url('');
+                        background: linear-gradient(5deg, navy,black);
+                        color: white;                        
+                        text-align: center;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        
+                    }
+
+                    #work-1{
+                        margin-top: 1vh;
+                    }
+                    
+                    #works button{
+                        background-color: cyan;
+                        width: 150px;
+                        height: 50px;
+                        font-size: 12pt;
+                        border-radius:5% ;
+                        
+                    }
+
+                    #blog{
+                        width: 100%;
+                        height: 500px;
+                        text-align: center;
+                        background-color: rgba(240, 240, 240, 0.52);
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+                    }
+                    #title h1{
+                        color: cyan;
+                    }
+                    #title span{
+                        color: black;
+                    }
+
+                    #content img{
+                        width: 100px;
+                        height: 100px;
+                        background-color: black;
+                        border-radius: 50%;
+                    }
+
+                    #controls{
+                        display: flex;
+                        margin-left: 40vh;
+                    }
+
+                    #controls div{
+                        width: 20px;
+                        height: 20px;
+                        background-color: lightslategray;
+                        margin: 2vh;                        
+                        border-radius: 50%;
+                    }
+
+                    #footer{
+                      height: 400px;
+                      width: 100%;
+                      background-color: navy;
+                      text-align: center;
+                    }
+                    
+                    #footer_logo img{
+                      width: 100px;
+                      height: 100px;                      
+                    }
+
+                    #boxes{
+                      display: flex;
+                      padding: 1vh;
+                      justify-content: space-evenly;
+                    }
+
+                    #boxes div{
+                      height: 30px;
+                      width: 30px;
+                      border: 2px solid white;
+                    }
+
+
+
+
+    </style>
+  </head>
+  <body>
+      <div id="container">
+          <div id="navbar">
+          <div id="nav-title">
+              <img src= "assets/images/logo-2.svg" alt="logo of Creative" >
+              
+
+          </div>
+          <div id="nav-items">
+            <ul>
+              <a href="#"><li>HOME</li></a>
+              <a href="#"><li>ABOUT</li></a>
+              <a href="#"><li>SERVICES</li></a>
+              <a href="#"><li>WORKS</li></a>
+              <a href="#"><li>BLOG</li></a>              
+              <a href="#"> <li><button>  CONTACT </button> </li></a>
+              
+              
+            </ul>        
+
+          </div>
+
+        </div>
+        <div class="main">
+            <div id="home">
+            <div id="man">
+                <img src="assets/images/man.png" alt="Abhishek Choudhary" width="50px"
+                height="600px">
+            </div>
+            <div id="para1">
+                <h3>Abhishek Choudhary</h3>
+                <h1>I'm a Full Stack <span>
+                    <br> Developer</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ea temporibus inventore pariatur atque adipisci porro ratione blanditiis veritatis autem minus quis, explicabo assumenda praesentium? Illum, ducimus. Beatae, ea cum?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ea temporibus inventore pariatur atque adipisci porro ratione blanditiis veritatis autem minus quis, explicabo assumenda praesentium? Illum, ducimus.
+                    
+                    
+                                </p>
+                <button><h5>DOWNLOAD CV</h5></button>
+
+            </div>
+        </div>
+
+
+        <div id="about">
+            <div id="man2">
+                <img src="assets/images/man-2.png" alt="Abhishek Choudhary" width="600px" height="500px">
+            </div>
+            <div id="para2">
+                
+                <h1>About<span>
+                    Me</span></h1>
+                    <h3>Hello I'm Abhishek Choudhary</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ea temporibus inventore pariatur atque adipisci porro ratione blanditiis veritatis autem minus quis, explicabo assumenda praesentium? Illum, ducimus. Beatae, ea cum?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ea temporibus inventore pariatur atque adipisci porro ratione blanditiis veritatis autem minus quis, explicabo assumenda praesentium? Illum, ducimus.
+                    
+                    
+                                </p>
+
+                <ul>
+                <a href="#"> <li><button><img src="assets/images/phone-2.svg" alt="img1"></button> </li> </a>
+                <a href="#"> <li><button><img src=" " alt="img2"></button> </li> </a>
+                <a href="#"> <li><button><img src=" " alt="img3"></button> </li> </a>
+                <a href="#"> <li><button><img src=" " alt="img4"></button> </li> </a>
+
+            </ul>
+
+            </div>
+        </div>
+        <div id="services">
+            <div id="heading">
+                <h1>Our <span>services</span></h1>
+                <p>We provide high standard clean Website for your bussiness solution</p>
+
+            </div>
+            <div id="tags_1">
+                <div id="tag1">
+                    <div id="white">
+                    <div id="cyan">
+                        <div id="black"></div>
+                        <h2>Graphic Design</h2>
+                        <p>There are many variatiions of passages
+                            of but the majority have suffeed alteration in som forsm
+                        </p>                        
+                    </div>
+                    </div>
+
+                </div>
+
+                <div id="tag1">
+                    <div id="white">
+                    <div id="cyan">
+                        <div id="black"></div>
+                        <h2>Graphic Design</h2>
+                        <p>There are many variatiions of passages
+                            of but the majority have suffeed alteration in som forsm
+                        </p>
+                    </div>
+                    </div>
+
+                </div>
+
+                <div id="tag1">
+                    <div id="white">
+                    <div id="cyan">
+                        <div id="black"></div>
+                        <h2>Graphic Design</h2>
+                        <p>There are many variatiions of passages
+                            of but the majority have suffeed alteration in som forsm
+                        </p>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--second tag_2 started-->
+
+            
+            <div id="tags_2">
+                <div id="tag1">
+                    <div id="white">
+                    <div id="cyan">
+                        <div id="black"></div>
+                        <h2>Graphic Design</h2>
+                        <p>There are many variatiions of passages
+                            of but the majority have suffeed alteration in som forsm
+                        </p>
+                    </div>
+                    </div>
+
+                </div>
+
+                <div id="tag1">
+                    <div id="white">
+                    <div id="cyan">
+                        <div id="black"></div>
+                        <h2>Graphic Design</h2>
+                        <p>There are many variatiions of passages
+                            of but the majority have suffeed alteration in som forsm
+                        </p>
+                    </div>
+                    </div>
+
+                </div>
+
+                <div id="tag1">
+                    <div id="white">
+                    <div id="cyan">
+                        <div id="black"></div>
+                        <h2>Graphic Design</h2>
+                        <p>There are many variatiions of passages
+                            of but the majority have suffeed alteration in som forsm
+                        </p>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div id="works">
+            <div id="work-1">
+
+  <h1>
+    I Am Available For Freelancer.
+  </h1>
+  <p> We provide high standard clean
+      Website for your bussiness solutions
+  </p>
+  <button>DOWNLOAD CV</button>
+               
+
+            
+</div>
+        </div>
+
+        <div id="blog">
+
+        <div id="title">
+            <h1>Our <span>Client</span></h1>
+            <p>We provide high standard clean Website for your bussiness solutions </p>
+        </div>
+
+        <div id="content">
+            <img src="" alt="lady">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ducimus aliquid eos amet, soluta omnis quia molestias ut deserunt quisquam similique ipsam harum perferendis asperiores.</p>
+            <p><b> - John Doel, Company ABC</b> </p>
+        </div>
+        <div id="controls">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        </div>
+
+        <div id="contact">
+
+        </div>
+
+        <div id="footer">
+          <div id="footer_logo">
+            <img src= "assets/images/logo-2.svg" alt="logo of Creative" width="500px" height="600px">
+          </div>
+          <div id="boxes">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <p>All copyrights are Reserved</p>      
+        </div>
+        </div>
+      </div>
+</html>
