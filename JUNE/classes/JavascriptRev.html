@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="JsStyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Great+Vibes&family=Lato:wght@100&family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Great+Vibes&family=Lato:wght@100&family=Poppins:ital,wght@1,600&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="nav">
+
+        <h1>JavaScript</h1>
+        <div class="menus">
+            <button>Home</button>
+            <button>Blogs</button>
+            <button>About</button>
+            <button>Contact</button>
+        </div>
+        </table>
+    </div>
+
+    <div class="content">
+
+        <!-- <div class="image-cont">
+            <div> -->
+
+
+        <!--     card 1 start here       -->
+        <div class="card1">
+            <img src="https://imgs.search.brave.com/SnF6Oe8Q_va-vv7IQV60dbirM5lFMCabEHYNSYrdZ3I/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9sb2dv/cy1kb3dubG9hZC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTkvMDEvSmF2YVNj/cmlwdF9Mb2dvLnBu/Zw" alt="JS" />
+            <div>
+                <h2>Introduction</h2>
+                <p>JavaScript is the world's most popular programming language.</p>
+                <p> JavaScript is the programming language of the Web.</p>
+                <p>JavaScript is easy to learn.</p>
+
+                <p>One of many JavaScript HTML methods is getElementById(). The example below "finds" an HTML element (with id="demo"), and changes the element content (innerHTML) to "Hello JavaScript":</p>
+
+                <p id="demo">JavaScript can change HTML content.</p>
+                <br>
+
+                <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click
+                    Me!</button>
+            </div>
+        </div>
+
+
+        <!-- card 1 end  -->
+
+        <!-- card 2 start here    -->
+
+        <div class="card2">
+            <h2>JavaScript Output</h2>
+            <div class="out">
+                <div id="out1">
+                    <h3>innerHTML</h3>
+                    <p id="demo1"></p>
+
+                    <script>
+                        document.getElementById("demo1").innerHTML = 5 + 6;
+                    </script>
+                </div>
+                <div id="out2">
+                    <h3>document.write() </h3>
+
+                    <button type="button" onclick="document.write(5 + 6)">Try it</button>
+
+                </div>
+                <div id="out3">
+                    <h3>window.alert()</h3>
+                    <p>Output will be shown in alert box when page loaded.</p>
+                    <script>
+                        window.alert(5 + 6);
+                    </script>
+
+                </div>
+                <div id="out4">
+                    <h3>console.log()</h3>
+                    <p>Output will be shown in console of html page you can view it by inspect option.</p>
+
+
+                    <script>
+                        console.log(5 + 6);
+                    </script>
+                </div>
+                <div id="out5">
+                    <h3>Print()</h3>
+                    <button onclick="window.print()">Print this page</button>
+                </div>
+            </div>
+        </div>
+        <!-- card 2 end  -->
+        <!-- card 3 start here -------->
+
+        <div class="card3">
+            <div id="card3_1">
+                <h3>JavaScript Programs</h3>
+                <p>A computer program is a list of "instructions" to be "executed" by a computer. In a programming language, these programming instructions are called statements. A JavaScript program is a list of programming statements.</p>
+            </div>
+            <div id="card3_2">
+                <h3>JavaScript Statements</h3>
+                <p id="dem"></p>
+
+                <script>
+                    document.getElementById("dem").innerHTML = "Hello Dolly.";
+                </script>
+            </div>
+
+            <div id="card3_3">
+                <h3>JavaScript White Space</h3>
+                <p>JavaScript ignores multiple spaces. You can add white space to your script to make it more readable.
+                </p>
+
+            </div>
+            <div class="card3_4">
+                <h3>JavaScript Code Blocks</h3>
+                <p>JavaScript statements can be grouped together in code blocks, inside curly brackets {...}. The purpose of code blocks is to define statements to be executed together.</p>
+            </div>
+        </div>
+        <div class="card3_5">
+            <h3>JavaScript Keywords</h3>
+        </div>
+        <!-- card 3 end  -->
+    </div>
+    </div>
+
+    <!-- -------- home section end -------- -->
+    <!-- -------- blog section start -------- -->
+
+    <div class="blogs">
+        <div class="heading"><b>
+                <h1>Blogs</h1>
+            </b></div>
+        <div class="slider">
+            <div class="s1"></div>
+            <div class="s2"></div>
+            <div class="s3"></div>
+            <div class="s4"></div>
+        </div>
+        <script>
+        </script>
+        <div class="cards">
+            <div class="angular">
+                <b>
+                    <h2>ANGULAR</h2>
+                </b>
+            </div>
+            <div class="react">
+                <b>
+                    <h2>REACT</h2>
+                </b>
+            </div>
+            <div class="native">
+                <b>
+                    <h2>REACT NATIVE</h2>
+                </b>
+            </div>
+        </div>
+    </div>
+    <!-- -------- blog section end -------- -->
+
+    <!-- ------- about section start -------- -->
+    <div class="about">
+        <div class="heading"><b>
+                <h1>About</h1>
+            </b>
+        </div>
+        <div class="content-about">
+            <div class="cards">
+                <div class="cards-1">
+                    <button class="card-btn" onclick="education();">Education</button>
+                    <button class="card-btn">Skills</button>
+                    <button class="card-btn">Hackerrank</button>
+                    <button class="card-btn">Git Hub</button>
+                    <button class="card-btn">LinkedIn</button>
+
+                </div>
+                <div class="cards-2">
+                    <img src="https://images.pexels.com/photos/3776200/pexels-photo-3776200.jpeg" alt="">
+                </div>
+                <div class="info">
+                    <div id="home"></div>
+                    <div id="edu"></div>
+                    <div id="skil"></div>
+                    <div id=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------- about section end ------- -->
+
+    <!-- --------contact section start ----- -->
+    <div class="contact">
+        <div class="heading"><b>
+                <h1>Contact</h1>
+            </b></div>
+        <div class="cards">
+            <div class="img">
+                <img src="https://img.freepik.com/free-photo/cheerful-curly-business-girl-wearing-glasses_176420-206.jpg?t=st=1656499639~exp=1656500239~hmac=2c1592af7064f0e5578c7b4d6d7ba54636fef7d2c5176f0ba606290ec3991cfc&w=740" alt="">
+            </div>
+            <div class="para">
+                <div class="cards">
+
+                    <div class="card_1">
+
+                        <img src="https://imgs.search.brave.com/aloI4OTxqzKqzd6Dcs-sEP_V5iRuXK9Ziqggwg7GxSw/rs:fit:1200:900:1/g:ce/aHR0cDovL3RlY2hj/b25uZWN0bWFnYXpp/bmUuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIwLzA1L0dN/QUlMLmpwZw" alt="">
+                        <p><span> javaemail@gmail.com</span></p>
+                    </div>
+
+                    <div class="card_2">
+                        <img src="https://imgs.search.brave.com/BtaOTxhuMsIINnBwdu0hnwazOPqKpVHUq5hFCdk9cpU/rs:fit:300:300:1/g:ce/aHR0cHM6Ly9tYXJr/ZXRlcnNmb3Jtb3Zl/cnMuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDE5LzAzL2xp/bmtlZGluLWxvZ28t/MzAweDMwMC5wbmc" alt="">
+                        <p><span></span><span><a
+                                    href="https://www.linkedin.com/in/shweta-8399081a9/">LinkedIN</a></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="heading">
+            <div class="cards">
+                <div class="card-1-1">
+                    <h3>Topics</h3>
+                    <p>What is JavaScript?</p>
+                    <p>How to declare method in JavaScript?</p>
+                    <p>How to declare function in JavaScript?</p>
+                    <p>How to declare Array?</p>
+                    <p>How to declare Strings?</p>
+                    <p>Does JavaScript follow the concept of OOPS?</p>
+                    <p>How to declare Constructors in JavaScript?</p>
+                    <p>Events in JavaScript?</p>
+                    <p>What is Event Handlers?</p>
+                </div>
+                <div class="card-1-2">
+                    <input type="text" placeholder="Search">
+                    <a href="#"><button type="submit"><i class="fa fa-search"></i></button></a>
+                </div>
+            </div>
+            <div class="copyri">
+                <p>&copy; All Rights are Reserved @ JavaScript</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

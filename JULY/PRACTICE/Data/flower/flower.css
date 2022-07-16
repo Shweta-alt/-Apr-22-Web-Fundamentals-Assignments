@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;    
+}
+/* 
+@media screen {
+    max-width: ; 
+} */
+
+
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-color: #ffdee3;
+}
+
+h2 , h3 {font-family: 'Arima', cursive;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+header{
+    
+    height: 20vh;
+    background-color: #ffa3b1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vw;
+    border-bottom: .25rem solid pink;
+    
+}
+
+
+header p{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+header button{
+    width: 10vw;    
+    height: 6vh;
+    color: white;
+    background-color: maroon;
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 1000;
+    font-stretch: expanded;
+    
+}
+
+header h1{
+    font-family:'Splash', cursive;
+    font-weight: 2000;
+    font-stretch: expanded;
+    font-size: 3rem;    
+}
+
+header p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+main{
+    height: 150vh;
+    display: flex;
+    flex-direction:column;   
+}
+
+
+.adv{
+    background-color: orange;
+    height: 7vh;
+    width: 30vw;
+    padding: .75vw;
+    margin-left: 0vw;
+    margin-top: 2vh;
+    position: fixed;
+}
+.sec-1{
+    height: 40vh;   
+
+}
+
+.sec-2{
+    height: 70vh;    
+    margin-top: 20vh;    
+}
+
+
+.card{
+    display: flex;
+    justify-content:space-around;
+}
+
+.card .c-1, .c-2, .c-3, .c-4{
+    width: 20vw;
+    height: 40vh;
+    background-color: maroon;       
+}
+
+.card img{
+    width:20vw;
+    height:25vh;    
+}
+.sec-3{
+    background-color: transparent;
+    height: 50vh;
+    margin: 5vw;
+}
+
+.sec-3 .card img{
+    width:100%;
+    height: 70%;    
+}
+
+.sec-3 .card{
+    display: flex;
+    justify-content: space-evenly;   
+    height: 50vh;
+}
+
+
+.sec-3 .card .ca-1, .ca-2{
+    background-color: lightcoral;
+    width: 30vw;
+    height: 45vh;
+    
+}
+
+.card .para{
+    padding: .5rem;
+    
+}
+
+footer{
+    background-color: maroon;
+
+}
+
+.footer {
+    width: auto;
+    height: 25vh;
+    
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;    
+    margin-top: 50vh;
+    
+}
+
+.sec-2-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin: 0;
+}
+
+input {
+    width: 30vw;
+    height: 5vh;
+    color: gray;
+    padding: .5rem;
+}
+
+button{
+    height: 5vh;
+    width: 10vw;
+    background-color: #ffa3b1;
+    color: maroon;
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 1000;
+    
+} 
+
+
+.footer-line{
+    height: 10vh;
+    font-family:'Splash', cursive;
+    font-weight: 2000;
+    font-stretch: expanded;
+    text-align: center;
+    font-size: 1rem;  
+}
+
+
+

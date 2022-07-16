@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Js</h1>
+    <form action="/">
+        <input type="button" name="submitt" id="btn" onclick="submit();" onmouseover="mouseOverEvent();" />
+        <select name="students" id="students">
+        <option value="suman">Suman</option>
+        <option value="tom">tom</option>
+        <option value="jerry">jerry</option>
+        <option value="nobita">nobita</option>
+        <option value="suniyo">suniyo</option>
+      </select>
+    </form>
+    <script>
+        function submit() {
+            console.log("you clicked");
+        }
+
+        function mouseOverEvent() {
+            console.log("ON mouse Over");
+        }
+
+        function mouseOutEvent() {
+            console.log("On Mouse Out");
+        }
+
+        function keydownEvent() {
+            console.log("keydown event");
+        }
+
+        function keyUp() {
+            console.log("key up ");
+        }
+
+        function Onchange() {
+            let x = document.getElementById("students").value;
+            console.log(x);
+        }
+    </script>
+</body>
+
+</html>

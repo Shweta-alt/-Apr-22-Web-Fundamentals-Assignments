@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <!-- <script>
+        function changeh2() {
+            var changeh2 = document.getElementById("h2-1");
+            var changep = document.getElementById("p1");
+            // UPDATE THE innerText
+            changeh2.innerText = "Hello , JS";
+            changep.innerText = "JavaScript is a scripting language hai na....";
+        }
+    </script> -->
+
+    <!-- task 1 of the date 17 june 2022 -->
+    <!-- <script>
+        function fn() {
+            //taking reference of each element by document.getElementById() method.
+            var changeh1 = document.getElementById("heading-h1");
+            var changep1 = document.getElementById("p1");
+            var changep2 = document.getElementById("p2");
+            // change the content by using innerText element property
+            changeh1.innerText = "JavaScript";
+            changep1.innerText = "DOM Manipulation";
+            changep2.innerText = "This is JS Code";
+            // change color of each element using style.color
+            changeh1.style.color = "red";
+            changep1.style.color = "blue";
+            changep2.style.color = "Yellow";
+            
+        }
+    </script> -->
+
+    <!-- task 2  -->
+
+    <style>
+        div {
+            width: 500px;
+            box-shadow: 0 0 10px black;
+            padding: 30px;
+            text-align: center;
+            margin: 100px auto;
+        }
+    </style>
+    <script>
+        function changePlaceHolder() {
+            var inputRefer = document.getElementById("i1");
+            var divRefer = document.getElementById("d1");
+
+            inputRefer.placeholder = "Text changed ....!";
+            divRefer.style.backgroundColor = "lightcoral";
+        }
+    </script>
+</head>
+
+<body>
+    <!-- <h2 id="h2-1">Welcome to HTML!</h2>
+    <p id="p1">Lorem ipsum dolor sit amet consectetur.</p>
+    <button onclick="changeh2()">Action</button> -->
+
+    <!-- task 1 of the date 17 june 2022 -->
+    <!-- 
+    <h1 id="heading-h1">HTML</h1>
+    <p id="p1">Tag concept</p>
+    <p id="p2">this is html code</p>
+    <button onclick="fn()">change to JS</button> -->
+
+    <!-- task 2 -->
+
+    <div id="d1">
+        <h2>Change PlaceHolder Text</h2>
+        Name:<input id="i1" type="text" placeholder="Enter the TExt" />
+        <button onclick="changePlaceHolder()">Change PlaceHolder</button>
+    </div>
+</body>
+
+</html>

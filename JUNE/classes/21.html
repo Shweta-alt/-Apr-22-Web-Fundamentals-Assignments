@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        div {
+            width: 500px;
+            box-shadow: 0 0 10px black;
+            text-align: center;
+            padding: 50px;
+            margin: 100px auto;
+        }
+    </style>
+    <script>
+        function fnCreateElement() {
+            var inputRef = document.getElementById("i1");
+            var divRef = document.getElementById("div");
+            var inputValue = inputRef.value;
+
+            var olRef = document.getElementById("ol");
+            var liRef = document.getElementById("li");
+
+            olRef.appendChild(liRef);
+            liRef.innerText = inputValue;
+
+            divRef.appendChild(olRef);
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <input id="i1" type="text" placeholder="enter text" />
+        <button onclick="fnCreateElement()">Submit</button>
+    </div>
+</body>
+
+</html>
